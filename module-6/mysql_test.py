@@ -2,15 +2,15 @@ import mysql.connector
 from mysql.connector import errorcode
 
 config = {
-    "user": "Gerardo",
-    "password": "nutella",
+    "user": "movies_user",
+    "password": "popcorn",
     "host": "127.0.0.1",
     "database": "movies",
     "raise_on_warnings": True
 }
-
 try:
     db = mysql.connector.connect(**config)
+
     print("\n Database user {} connected to MYSQL on host {} with database {}".format(config["user"], config["host"], config["database"]))
     input("\n\n Press any key to continue...")
 
